@@ -2,7 +2,7 @@
 
 The website for *Inquiry and Practice* by Anatoly Lezhen.
 
-Cloudflare Pages publishes the `site/` folder as is (no build command). Every push to `main` goes live in about a minute.
+Cloudflare publishes the `site/` folder as is: `wrangler.jsonc` points Cloudflare Workers at it, and a Pages project uses `site` as its build output directory. There is no build command. Every push to `main` goes live in about a minute.
 
 | Folder | What it holds |
 | --- | --- |

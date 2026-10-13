@@ -1,0 +1,9 @@
+{
+  // Cloudflare: publish the site/ folder as a static website.
+  "name": "inquiry-and-practice",
+  "compatibility_date": "2026-10-13",
+  "assets": {
+    "directory": "./site",
+    "not_found_handling": "404-page"
+  }
+}
