@@ -15,7 +15,9 @@ shutil.copy(S / "brand" / "og.png", OUT / "og.png")
 
 body = (SITE / "index.html").read_text()
 title_end = body.index("</title>") + len("</title>")
-desc = "Inquiry and Practice, a new model of human development by Anatoly Lezhen. Read all fifteen chapters free, or listen to the podcast."
+WORDS = "zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty".split()
+nch = len(list((SITE / "reader").glob("ch*.json")))
+desc = f"Inquiry and Practice, a new model of human development by Anatoly Lezhen. Read all {WORDS[nch] if nch < len(WORDS) else nch} chapters free, or listen to the podcast."
 CANON = f'<link rel="canonical" href="{URL}">\n' if URL else ""
 OGURL = f'<meta property="og:url" content="{URL}">\n' if URL else ""
 head = f"""<!doctype html>

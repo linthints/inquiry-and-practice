@@ -39,7 +39,7 @@ def pandoc(md, n):
     return r.stdout
 
 index = []
-for n in range(1, 16):
+for n in range(1, len(list(MD.glob("ch*.md"))) + 1):
     raw = (MD/f"ch{n:02d}.md").read_text()
     lines = raw.split("\n")
     title = re.sub(r"^Chapter \d+:\s*", "", lines[0].lstrip("# ").strip())
