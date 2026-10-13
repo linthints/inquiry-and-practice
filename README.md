@@ -1,6 +1,6 @@
 # Inquiry and Practice
 
-The website for *Inquiry and Practice* by Anatoly Lezhen.
+The website for *Inquiry and Practice* by Anatoly Lezhen, live at https://inquiryandpractice.com
 
 Cloudflare publishes the `site/` folder as is: `wrangler.jsonc` points Cloudflare Workers at it, and a Pages project uses `site` as its build output directory. There is no build command. Every push to `main` goes live in about a minute.
 
@@ -15,5 +15,5 @@ Cloudflare publishes the `site/` folder as is: `wrangler.jsonc` points Cloudflar
 
 ## Updating
 
-- **A podcast link or page text:** edit `source/page/index.html`, then run `tools/rebuild.sh <domain>`.
-- **A revised chapter:** replace its file in `source/md/` (and any figure in `source/fig/`), then run `tools/rebuild.sh <domain>`.
+- **A podcast link or page text:** edit `source/page/index.html`, then run `tools/rebuild.sh inquiryandpractice.com`.
+- **A revised chapter:** replace its file in `source/md/` (and any figure in `source/fig/`), then run `tools/rebuild.sh inquiryandpractice.com`.
