@@ -1,6 +1,6 @@
 # Inquiry and Practice
 
-The website for *Inquiry and Practice* by Anatoly Lezhen, served at its custom domain
+The website for *Inquiry and Practice* by Anatoly Lezhen, served at https://inquiryandpractice.com/
 
 A static site with no build step. Cloudflare Pages publishes this repository as is; every push to `main` goes live in about a minute.
 
