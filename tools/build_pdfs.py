@@ -13,7 +13,7 @@ OUT.mkdir(parents=True, exist_ok=True)
 TONE.mkdir(exist_ok=True)
 
 BOOK, AUTHOR = "Inquiry and Practice", "Anatoly Lezhen"
-ROMAN = "I II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX".split()
+ROMAN = "I II III IV V VI VII VIII IX X XI XII XIII XIV XV XVI XVII XVIII XIX XX XXI XXII XXIII XXIV XXV".split()
 
 # Palette: iron-gall ink, sanguine (red chalk), verdigris-indigo, paper
 INK, SANG, INDIGO, FADED, PAPER = (os.environ.get(k, d) for k, d in (("C_INK","#2E2418"),("C_SANG","#9C4A2F"),("C_INDIGO","#3E5A68"),("C_FADED","#8C7457"),("C_PAPER","#FBF7EE")))
